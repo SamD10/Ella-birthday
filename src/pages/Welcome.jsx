@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import splitstrings from "../utils/splitString";
 import { easeInOut, motion } from "framer-motion";
 
-const text1 = `Hey babe, hope you had a great birthday so far`;
-const text2 = `I just want to add something more to your day`;
+const text1 = `Happy Birthday to my girlfriend, bestfriend, partner and confidante`;
+const text2 = `Here's a little something I've prepared for you, hope you'll enjoy it`;
 
 const charVariant = {
 	hidden: { opacity: 0 },
