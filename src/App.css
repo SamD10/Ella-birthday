@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Updock&display=swap");
+
+.welcome {
+	background: linear-gradient(37deg, #a2346a 44%, #61265f 100%);
+	min-width: 100vw;
+	min-height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	gap: 20px;
+}
+
+.text {
+	font-family: "Updock", cursive;
+	font-weight: 500;
+	font-size: 2.4rem;
+}
+
+h1 {
+	font-family: "Amita", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 4rem;
+	text-shadow: 0px 0px 8px #fff;
+}
+
+.funBtn {
+	padding: 10px 20px;
+	border: 2px solid white;
+	border-radius: 30px;
+	background-color: transparent;
+	color: white;
+	font-family: "Updock", cursive;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.wishes {
+	background: linear-gradient(180deg, #e34275 22%, #812d64 87%);
+	max-width: 100vw;
+	min-height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	gap: 20px;
+	padding: 25px;
+}
+
+.cardContainer {
+	padding: 35px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+.flipCard {
+	width: 330px;
+	height: 470px;
+	border-radius: 32px;
+	perspective: 1000px;
+	cursor: pointer;
+}
+
+.flipCard-inner {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.front {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 32px;
+}
+.back {
+	width: 100%;
+	height: 100%;
+	background: #333;
+	transform: rotateY(180deg);
+	border-radius: 32px;
+	padding: 15px;
+	font-family: "Updock", cursive;
+	font-size: 1.8rem;
+	overflow-y: auto;
+	text-shadow: 0px 0px 3px #e34275;
+	scrollbar-width: thin;
+}
+
+.front,
+.back {
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 30px;
+	gap: 20px;
+	min-height: 100vh;
+	background-color: #df22c5;
+}
+
+.slideshow {
+	margin: auto;
+	width: 65vw;
+	height: 80vh;
+	aspect-ratio: calc(16/9);
+	position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.next, .prev{
+  padding: 5px;
+  aspect-ratio: 1;
+  width: 40px;
+  border-radius: 52px;
+  text-align: center;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.prev{
+  top: 50%;
+  left:6px;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
+.next{
+  top: 50%;
+  right:6px;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
+.slides{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
