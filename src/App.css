@@ -2,8 +2,9 @@
 
 .welcome {
 	background: linear-gradient(37deg, #a2346a 44%, #61265f 100%);
-	min-width: 100vw;
+	max-width: 100vw;
 	min-height: 100vh;
+	overflow: hidden;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -42,6 +43,7 @@ h1 {
 	background: linear-gradient(180deg, #e34275 22%, #812d64 87%);
 	max-width: 100vw;
 	min-height: 100vh;
+	overflow: hidden;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -112,6 +114,7 @@ h1 {
 	background-color: #df22c5;
 	padding: 40px;
 	max-width: 100vw;
+	min-height: 100vh;
 	overflow: hidden;
 }
 
